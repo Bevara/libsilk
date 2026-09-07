@@ -1,0 +1,17 @@
+{
+    "name": "libsilk",
+    "description": "SILK speech decoder",
+    "filters":["silkdec"],
+    "help": "This filter decodes standalone SILK speech files using the SILK SDK. This is not the SILK carried inside Opus: the two bitstreams differ by the frame header Opus moved into its TOC byte.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libsilk.accessor",
+    "filter_source":{
+        "silkdec" : "dec_silk.c"
+    },
+    "extension":{
+      "silk" : "audio"
+    },
+    "licence_required":false
+}
