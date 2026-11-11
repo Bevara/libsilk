@@ -1,19 +1,28 @@
 {
     "name": "libsilk",
     "description": "SILK speech decoder",
-    "filters":["silkdec"],
+    "filters": [
+        "silkdec"
+    ],
     "help": "This filter decodes standalone SILK speech files using the SILK SDK. This is not the SILK carried inside Opus: the two bitstreams differ by the frame header Opus moved into its TOC byte.",
     "support": [
         "audio"
     ],
-    "sources":"https://bevara.ddns.net/sources/libsilk.accessor",
-    "filter_source":{
-        "silkdec" : "dec_silk.c"
+    "sources": "https://bevara.ddns.net/sources/libsilk.accessor",
+    "filter_source": {
+        "silkdec": "dec_silk.c"
     },
-    "extension":{
-      "silk" : "audio"
+    "extension": {
+        "silk": "audio"
     },
-    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_minimal_1.0.1",
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "under-review",
         "note": "SILK: Skype SDK licence",
